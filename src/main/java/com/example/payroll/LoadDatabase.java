@@ -20,12 +20,12 @@ public class LoadDatabase {
                     "burglar")));
             log.info("Preloading "+repository.save(new Employee("Frodo Baggins",
                     "thief")));
-            orderRepository.save(new Order("MacBook Pro", Status.COMPLETED));
-            orderRepository.save(new Order("iPhone", Status.IN_PROGRESS));
+           // orderRepository.save(new Order("MacBook Pro", Status.COMPLETED));
+           // orderRepository.save(new Order("iPhone", Status.IN_PROGRESS));
 
-            orderRepository.findAll().forEach(order -> {
-                log.info("Preloaded " + order);
-            });
+           // orderRepository.findAll().forEach(order -> {
+                //log.info("Preloaded " + order);
+            //});
         };
     }
 }

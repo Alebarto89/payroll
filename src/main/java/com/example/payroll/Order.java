@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "CUSTOMER_ORDER")
+@Table(name = "order")
 class Order {
 
     private @Id @GeneratedValue Long id;
